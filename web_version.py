@@ -3,6 +3,7 @@ import streamlit as st
 import common_functions as cf
 
 to_dos = cf.read_file()
+st.set_page_config(layout="wide", page_title="My To-Do App")
 
 
 def add_todo():
