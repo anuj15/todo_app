@@ -23,8 +23,11 @@ st.title("My To-Do App")
 for index, to_do in enumerate(to_dos):
     st.checkbox(to_do, key=to_do, on_change=remove_todo, args=(index, to_do,))
 
-st.text_input(label="", placeholder="Add a new task", on_change=add_todo,
+st.write("<hr>", unsafe_allow_html=True)
+
+st.text_input(label="Enter new To Do here:", placeholder="Add a new task", on_change=add_todo,
               key="new_todo")
+st.write("<br>", unsafe_allow_html=True)
 
 with st.expander("How To Use"):
     st.markdown("""

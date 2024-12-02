@@ -75,6 +75,7 @@ def search():
                     """
 
 
-st.text_input(label='Anime Title', placeholder='Enter complete or partial anime name', key='title', on_change=search)
+st.text_input(label='Anime Title', placeholder='Enter complete or partial anime name and press enter', key='title',
+              on_change=search)
 time.sleep(1)
 show_details = st.markdown(st.session_state.anime_details, unsafe_allow_html=True)
