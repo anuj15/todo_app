@@ -1,0 +1,44 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    background-color: #222;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.poster {
+    max-width: 150px;
+    max-height: 225px;
+    margin-right: 20px;
+}
+
+.details, .plot {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+h2, h4 {
+    color: #eee;
+}
+
+strong {
+    color: #ddd;
+}
+
+.error {
+    padding: 20px;
+    border: 1px solid #f00;
+    border-radius: 8px;
+    background-color: #fdd;
+    color: #f00;
+    text-align: center;
+}

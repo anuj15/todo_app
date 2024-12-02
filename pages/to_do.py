@@ -3,7 +3,6 @@ import streamlit as st
 import common_functions as cf
 
 to_dos = cf.read_file()
-st.set_page_config(layout="wide", page_title="My To-Do App")
 
 
 def add_todo():
@@ -24,4 +23,11 @@ st.title("My To-Do App")
 for index, to_do in enumerate(to_dos):
     st.checkbox(to_do, key=to_do, on_change=remove_todo, args=(index, to_do,))
 
-st.text_input(label="", placeholder="Add a new task", on_change=add_todo, key="new_todo")
+st.text_input(label="", placeholder="Add a new task", on_change=add_todo,
+              key="new_todo")
+
+with st.expander("How To Use"):
+    st.markdown("""
+    - <sub style=color:cyan>Click on the checkbox to remove the task from the list of tasks</sub>
+    - <sub style=color:cyan>Write a task in the text box and press enter to add it to the list of tasks</sub>
+    """, unsafe_allow_html=True)
