@@ -22,6 +22,6 @@ pg = st.navigation(
 )
 
 # SHARED ACROSS PAGES
-st.sidebar.text(body='©️ by Anuj Gupta')
+# st.sidebar.text(body='©️ by Anuj Gupta')
 
 pg.run()
