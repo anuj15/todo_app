@@ -1,7 +1,7 @@
 import requests
 import streamlit as st
 
-FILEPATH = "todos.txt"
+FILEPATH = "data/todos.txt"
 OPEN_TRIVIA_ENDPOINT = st.secrets['OPEN_TRIVIA_ENDPOINT']
 
 

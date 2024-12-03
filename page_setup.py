@@ -10,9 +10,10 @@ quiz = st.Page(page='pages/quiz.py', title='Quizzes', icon=':material/quiz:')
 bmi_calculator = st.Page(page='pages/bmi_calculator.py', title='BMI Calculator', icon=':material/health_and_safety:')
 unit_converter = st.Page(page='pages/unit_converter.py', title='Unit Converter', icon=':material/square_foot:')
 
+
 # NAVIGATION SETUP [WITHOUT SECTIONS]
 # pg = st.navigation(
-#     page=[to_do, movie_finder, anime_finder, quiz, bmi_calculator],
+#     page=[to_do, movie_finder, anime_finder, quiz, bmi_calculator, unit_converter],
 #     )
 
 # NAVIGATION SETUP [WITH SECTIONS]

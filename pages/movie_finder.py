@@ -76,7 +76,7 @@ def search_with_year():
 
 # Title and styling
 st.write(f'<h1 style=text-align:left>{TITLE}</h1><hr>', unsafe_allow_html=True)
-st.markdown('<style>' + open('style/movie.css').read() + '</style>', unsafe_allow_html=True)
+st.markdown('<style>' + open('style/styles.css').read() + '</style>', unsafe_allow_html=True)
 
 # Layout
 l, r = st.columns(spec=2)

@@ -11,7 +11,7 @@ KITSU_API_ENDPOINT = st.secrets['KITSU_API_ENDPOINT']
 
 TITLE = 'Anime Finder'
 st.write(f'<h1 style=text-align:left>{TITLE}</h1><hr>', unsafe_allow_html=True)
-st.markdown('<style>' + open('style/movie.css').read() + '</style>', unsafe_allow_html=True)
+st.markdown('<style>' + open('style/styles.css').read() + '</style>', unsafe_allow_html=True)
 
 # Initialization
 if 'anime_details' not in st.session_state:
