@@ -79,3 +79,17 @@ st.text_input(label='Anime Title', placeholder='Enter complete or partial anime 
               on_change=search)
 time.sleep(1)
 show_details = st.markdown(st.session_state.anime_details, unsafe_allow_html=True)
+
+with st.expander("My top 10 Anime:"):
+    st.markdown("""
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Steins;Gate</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Attack on Titan</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Full Metal Alchemist</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Erased</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Code Geass</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Monster</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Kaguya-Sama: Love is War</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Frieren</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Mushi-Shi</p>
+        <p style="color: cyan; font-size: 14px; margin-bottom: 0px;">- Demon Slayer: Kimetsu no Yaiba</p>
+    """, unsafe_allow_html=True)
