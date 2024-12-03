@@ -8,6 +8,7 @@ anime_finder = st.Page(page='pages/anime_finder.py', title='Anime Finder', icon=
 to_do = st.Page(page='pages/to_do.py', title='TO Do App', icon=':material/lists:')
 quiz = st.Page(page='pages/quiz.py', title='Quizzes', icon=':material/quiz:')
 bmi_calculator = st.Page(page='pages/bmi_calculator.py', title='BMI Calculator', icon=':material/health_and_safety:')
+unit_converter = st.Page(page='pages/unit_converter.py', title='Unit Converter', icon=':material/square_foot:')
 
 # NAVIGATION SETUP [WITHOUT SECTIONS]
 # pg = st.navigation(
@@ -18,7 +19,7 @@ bmi_calculator = st.Page(page='pages/bmi_calculator.py', title='BMI Calculator',
 pg = st.navigation(
     {
         'Entertainment': [movie_finder, anime_finder],
-        'Apps': [to_do, quiz, bmi_calculator],
+        'Apps': [to_do, quiz, bmi_calculator, unit_converter],
     }
 )
 

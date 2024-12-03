@@ -4,16 +4,16 @@ st.title("BMI Calculator")
 st.markdown("Calculate your BMI using the metric system")
 
 # Input for weight
-st.text_input(label="Enter your weight in kg", key="weight", value=0, placeholder="Enter your weight in kg")
-weight = float(st.session_state.weight)
+st.number_input(label="", label_visibility="hidden", key="weight", step=1.0, value=None,
+                placeholder="Enter your weight in kg")
 
 # Input for height
-st.text_input(label="Enter your height in cm", key="height", value=0, placeholder="Enter your height in cm")
-height = float(st.session_state.height)
+st.number_input(label="", label_visibility="hidden", key="height", step=1.0, value=None,
+                placeholder="Enter your height in cm")
 
 # Calculate BMI
 if st.button("Calculate BMI"):
-    bmi = weight / (height / 100) ** 2
+    bmi = st.session_state.weight / (st.session_state.height / 100) ** 2
     st.markdown(f"Your BMI is: {bmi:.2f}")
     if bmi < 18.5:
         st.markdown("BMI Categories:")
