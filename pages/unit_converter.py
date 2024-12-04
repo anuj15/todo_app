@@ -3,9 +3,9 @@ import streamlit as st
 st.title("Unit Converter")
 
 # Length Converter
-st.write("<hr>", unsafe_allow_html=True)
+st.markdown("---")
 st.markdown("### Length Converter")
-length = st.number_input(label="", label_visibility="hidden", value=None, step=1.0,
+length = st.number_input(label="Enter the length in meters", label_visibility="hidden", value=None, step=1.0,
                          placeholder="Enter the length in meters")
 unit = st.selectbox("Select the unit", ["Feet", "Inches", "Centimeters"])
 if length is not None:
@@ -18,9 +18,9 @@ if length is not None:
     st.write(f"The length in {unit} is {result}")
 
 # Weight Converter
-st.write("<hr>", unsafe_allow_html=True)
+st.markdown("---")
 st.markdown("### Weight Converter")
-weight = st.number_input(label="", label_visibility="hidden", value=None, step=1.0,
+weight = st.number_input(label="Enter the weight in kilograms", label_visibility="hidden", value=None, step=1.0,
                          placeholder="Enter the weight in kilograms")
 unit = st.selectbox("Select the unit", ["Pounds", "Ounces", "Grams"])
 if weight is not None:
@@ -33,9 +33,9 @@ if weight is not None:
     st.write(f"The weight in {unit} is {result}")
 
 # Temperature Converter
-st.write("<hr>", unsafe_allow_html=True)
+st.markdown("---")
 st.markdown("### Temperature Converter")
-temperature = st.number_input(label="", label_visibility="hidden", value=None, step=1.0,
+temperature = st.number_input(label="Enter the temperature in Celsius", label_visibility="hidden", value=None, step=1.0,
                               placeholder="Enter the temperature in Celsius")
 unit = st.selectbox("Select the unit", ["Fahrenheit", "Kelvin"])
 if temperature is not None:

@@ -1,14 +1,15 @@
 import streamlit as st
 
 st.title("BMI Calculator")
+st.markdown("---")
 st.markdown("Calculate your BMI using the metric system")
 
 # Input for weight
-st.number_input(label="", label_visibility="hidden", key="weight", step=1.0, value=None,
+st.number_input(label="Enter your weight in kg", label_visibility="hidden", key="weight", step=1.0, value=None,
                 placeholder="Enter your weight in kg")
 
 # Input for height
-st.number_input(label="", label_visibility="hidden", key="height", step=1.0, value=None,
+st.number_input(label="Enter your height in cm", label_visibility="hidden", key="height", step=1.0, value=None,
                 placeholder="Enter your height in cm")
 
 # Calculate BMI

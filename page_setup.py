@@ -12,6 +12,7 @@ unit_converter = st.Page(page='pages/unit_converter.py', title='Unit Converter',
 recipe_finder = st.Page(page='pages/recipe_finder.py', title='Recipe Finder', icon=':material/restaurant_menu:')
 filter_image = st.Page(page='pages/filter_image.py', title='Filter Image', icon=':material/photo_filter:')
 stock_price = st.Page(page='pages/stock_price.py', title='Stock Price', icon=':material/monetization_on:')
+calculator = st.Page(page='pages/calculator.py', title='Calculator', icon=':material/calculate:')
 
 # NAVIGATION SETUP [WITHOUT SECTIONS]
 # pg = st.navigation(
@@ -22,7 +23,7 @@ stock_price = st.Page(page='pages/stock_price.py', title='Stock Price', icon=':m
 pg = st.navigation(
     {
         'Entertainment': [movie_finder, anime_finder, filter_image],
-        'Study': [quiz, bmi_calculator, unit_converter],
+        'Study': [quiz, bmi_calculator, unit_converter, calculator],
         'Others': [to_do, recipe_finder],
         'Finance': [stock_price],
     }

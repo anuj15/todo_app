@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.title("Filter Image")
-
+st.markdown("---")
 with st.expander("Capture image & convert it to gray scale"):
     image = st.camera_input("Camera")
     if image:

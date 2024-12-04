@@ -85,7 +85,7 @@ if st.session_state.is_data_available:
                     index=None,
                     key=f'answer_{i}',
                 )
-            st.write('<hr>', unsafe_allow_html=True)
+            st.markdown("---")
         submit_button = st.form_submit_button(label='Submit', type='primary', on_click=check_answers)
 
     if st.session_state.score != '':

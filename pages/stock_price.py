@@ -24,7 +24,8 @@ data_response = ["Time Series (Daily)", "Weekly Time Series", "Monthly Time Seri
 data_values = []
 
 st.title("Stock Price App")
-st.text_input(label="", label_visibility="hidden", key="ticker", placeholder="Enter the ticker")
+st.markdown("---")
+st.text_input(label="Enter the ticker", label_visibility="hidden", key="ticker", placeholder="Enter the ticker")
 st.selectbox(label="Select time", options=["", "Last 100 days", "Last 100 weeks", "Last 100 months"], key="duration")
 
 if st.session_state.duration == "Last 100 days":

@@ -19,11 +19,14 @@ def remove_todo(i, value):
 
 
 st.title("My To-Do App")
+st.markdown("---")
 
+if to_dos:
+    st.write("### To Dos")
 for index, to_do in enumerate(to_dos):
     st.checkbox(to_do, key=to_do, on_change=remove_todo, args=(index, to_do,))
 
-st.write("<hr>", unsafe_allow_html=True)
+st.markdown("---")
 
 st.text_input(label="Enter new To Do here:", placeholder="Add a new task", on_change=add_todo,
               key="new_todo")
