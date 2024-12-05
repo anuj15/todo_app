@@ -13,19 +13,20 @@ recipe_finder = st.Page(page='pages/recipe_finder.py', title='Recipe Finder', ic
 filter_image = st.Page(page='pages/filter_image.py', title='Filter Image', icon=':material/photo_filter:')
 stock_price = st.Page(page='pages/stock_price.py', title='Stock Price', icon=':material/monetization_on:')
 calculator = st.Page(page='pages/calculator.py', title='Calculator', icon=':material/calculate:')
+graph_explorer = st.Page(page='pages/graph_explorer.py', title='Graph Explorer', icon=':material/monitoring:')
 
 # NAVIGATION SETUP [WITHOUT SECTIONS]
 # pg = st.navigation(
-#     page=[to_do, movie_finder, anime_finder, quiz, bmi_calculator, unit_converter, recipe_finder, filter_image, stock_price],
+#     page=[to_do, movie_finder, anime_finder, quiz, bmi_calculator, unit_converter, recipe_finder, filter_image, stock_price, calculator, graph_explorer],
 #     )
 
 # NAVIGATION SETUP [WITH SECTIONS]
 pg = st.navigation(
     {
-        'Entertainment': [movie_finder, anime_finder, filter_image],
-        'Study': [quiz, bmi_calculator, unit_converter, calculator],
-        'Others': [to_do, recipe_finder],
         'Finance': [stock_price],
+        'Entertainment': [movie_finder, anime_finder, filter_image],
+        'Study': [quiz, bmi_calculator, unit_converter, calculator, graph_explorer],
+        'Others': [to_do, recipe_finder],
     }
 )
 
